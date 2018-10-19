@@ -1,20 +1,16 @@
 package com.corantinhoulbert.cheesechaser;
 
-import android.content.ClipData;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
 import android.os.Handler;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -22,7 +18,6 @@ import java.util.Random;
 
 
 public class Game extends View implements View.OnTouchListener{
-
     private int[][] board;
     private List<Integer> deck;
 
@@ -63,10 +58,11 @@ public class Game extends View implements View.OnTouchListener{
         Random rand = new Random();
         Integer randomInt = initiateDeck().get(rand.nextInt(initiateDeck().size()));
 
+
         Bitmap bitmap = BitmapFactory.decodeResource(res, randomInt);
 
-        canvas.drawBitmap(bitmap, dx, dy, paint);
 
+        canvas.drawBitmap(bitmap, dx, dy, paint);
 
 
     }
@@ -320,4 +316,5 @@ public class Game extends View implements View.OnTouchListener{
             }
         }
     }
+
 }

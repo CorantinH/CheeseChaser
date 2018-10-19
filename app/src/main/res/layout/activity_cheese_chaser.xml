@@ -5,19 +5,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".CheeseChaser">
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
-        android:layout_height="182dp"
+        android:layout_height="308dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginTop="64dp"
+        android:src="@drawable/title"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/title" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:layout_width="368dp"
@@ -50,28 +50,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/stat50px" />
+                android:src="@drawable/stat50px" />
 
             <ImageButton
                 android:id="@+id/imageButton6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/tuto50px" />
+                android:src="@drawable/tuto50px" />
 
             <ImageButton
                 android:id="@+id/imageButton7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/info50px" />
+                android:src="@drawable/info50px" />
 
             <ImageButton
                 android:id="@+id/imageButton8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/opt50px" />
+                android:src="@drawable/opt50px" />
 
         </LinearLayout>
 
@@ -85,7 +85,7 @@
             android:id="@+id/imageView4"
             android:layout_width="match_parent"
             android:layout_height="81dp"
-            app:srcCompat="@drawable/listlogo" />
+            android:src="@drawable/listlogo" />
 
     </LinearLayout>
 
